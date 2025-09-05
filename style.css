@@ -1,0 +1,124 @@
+/* 🌿 Typography & Colors */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background-color: #f9fdfb;
+}
+h1, h2, h3 {
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+/* Eco-friendly palette */
+:root {
+  --blue: #2e8bc0;
+  --green: #3ca86c;
+  --light-green: #dff5e1;
+  --light-blue: #e6f7fb;
+  --yellow: #ffd700;
+}
+
+/* 🧭 Header */
+header {
+  background-color: var(--blue);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: var(--yellow);
+}
+
+/* 🌿 Hero Section */
+.hero {
+  text-align: center;
+  background-color: var(--light-blue);
+  padding: 80px 20px;
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1em;
+}
+
+/* 🧳 About Section */
+.about {
+  padding: 60px 20px;
+  background-color: var(--light-green);
+  text-align: center;
+}
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* 🚀 Call to Action */
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+}
+.cta button {
+  background-color: var(--green);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.cta button:hover {
+  background-color: #2e8b57;
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+  .about h2 {
+    font-size: 1.5em;
+  }
+}
